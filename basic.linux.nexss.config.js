@@ -1,7 +1,6 @@
 let languageConfig = Object.assign({}, require("./basic.win32.nexss.config"));
 
-const os = require(`${process.env.NEXSS_SRC_PATH}/node_modules/@nexssp/os/`);
-const sudo = os.sudo();
+const sudo = process.sudo;
 
 languageConfig.builders = {
   freebasic: {
